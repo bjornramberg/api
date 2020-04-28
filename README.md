@@ -1,5 +1,5 @@
 [![Build Status](https://cloud.drone.io/api/badges/bjornramberg/api/status.svg?ref=refs/heads/master)](https://cloud.drone.io/bjornramberg/api)
-https://img.shields.io/github/license/bjornramberg/api
+![GitHub](https://img.shields.io/github/license/bjornramberg/api)
 # Go API 
 
 A simple REST API with CRUD operations. The API will use an internal array, built and run on go version go1.12 but will probably work fine on earlier versions as well.
