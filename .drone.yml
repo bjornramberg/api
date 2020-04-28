@@ -9,7 +9,7 @@ workspace:
   - name: build
     image: golang
     commands:
-      - go get
+      - go get -d -v .
       - go build -o output
       - chmod +x output
       
