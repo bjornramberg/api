@@ -6,24 +6,24 @@ workspace:
   path: src/github.com/bjornramberg/api/
   
 steps:  
-  - name: coverage
-    image: plugins/codecov
-    settings:
-      token: 2ec7eeef-89e9-453d-b782-3d034dc12f49
-      files:
-       - *.go
+- name: coverage
+  image: plugins/codecov
+  settings:
+    token: 2ec7eeef-89e9-453d-b782-3d034dc12f49
+    files:
+     - *.go
 
-  - name: build
-    image: golang
-    commands:
-     - go get -d -v .
-     - go build -o output
-     - chmod +x output
+- name: build
+  image: golang
+  commands:
+   - go get -d -v .
+   - go build -o output
+   - chmod +x output
       
-  - name: run
-    image: golang
-    commands:
-      - go get
-      - go build -o api
-      - chmod +x api
-      - ./api &
+- name: run
+  image: golang
+  commands:
+    - go get
+    - go build -o api
+    - chmod +x api
+    - ./api &
