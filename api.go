@@ -20,7 +20,7 @@ type User struct {
 	Age       int    `json:"age,omitempty"`
 }
 
-var users []Usser
+var users []User
 
 func main() {
 
