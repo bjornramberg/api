@@ -5,7 +5,7 @@ workspace:
   base: /go
   path: src/github.com/bjornramberg/api/
   
-  steps:  
+steps:  
   - name: build
     image: golang
     commands:
