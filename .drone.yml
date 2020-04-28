@@ -3,7 +3,7 @@ name: default
 
 workspace:
   base: /go
-  path: src/github.com/bjornramberg/api
+  path: src/github.com/bjornramberg/api/
   
   steps:  
   - name: build
