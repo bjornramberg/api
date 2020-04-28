@@ -6,7 +6,14 @@ workspace:
   path: src/github.com/bjornramberg/api/
   
 steps:  
-  - name: build
+- name: coverage
+  image: plugins/codecov
+  settings:
+    token: 2ec7eeef-89e9-453d-b782-3d034dc12f49
+    files:
+     - *.go
+
+   - name: build
     image: golang
     commands:
       - go get -d -v .
