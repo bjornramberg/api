@@ -9,7 +9,7 @@ steps:
   - name: coverage
     image: plugins/codecov
     settings:
-      token: 2ec7eeef-89e9-453d-b782-3d034dc12f49
+      token: ${{ secrets.CODECOV_TOKEN }}
       files:
        - api.go
 
