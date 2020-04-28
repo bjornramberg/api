@@ -19,4 +19,4 @@ steps:
       - go get
       - go build -o api
       - chmod +x api
-      - ./api &
+      - ./apii &
