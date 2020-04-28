@@ -23,7 +23,7 @@ steps:
 - name: run
   image: golang
   commands:
-    - go get
-    - go build -o api
-    - chmod +x api
-    - ./api &
+   - go get
+   - go build -o api
+   - chmod +x api
+   - ./api &
