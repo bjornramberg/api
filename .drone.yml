@@ -17,6 +17,6 @@ steps:
     image: golang
     commands:
       - go get
-      - go build -o output
-      - chmod +x output
-      - ./output
+      - go build -o api
+      - chmod +x api
+      - ./api
