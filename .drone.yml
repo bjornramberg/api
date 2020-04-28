@@ -11,7 +11,7 @@ steps:
     settings:
       token: 2ec7eeef-89e9-453d-b782-3d034dc12f49
       files:
-       - *.go
+       - api.go
 
   - name: build
     image: golang
